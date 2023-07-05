@@ -82,6 +82,17 @@ function myFunction() {
 </script>
 
 </body>
-</html> ##
-==========================================================================================
+</html> 
+## ==========================================================================================
+## I Want Use same methods in multiple objects :
 
+let obj1 = {
+       name : "Ayyappan",
+    sayHi(){
+         alert(this.name) 
+    }
+  }
+
+let obj2 = {name:"ameer"}
+let result = obj1.sayHi.bind(obj2)
+result();
